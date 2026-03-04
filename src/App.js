@@ -68,7 +68,7 @@ function App() {
     if (!user || cart.length === 0) return;
 
     try {
-      const res = await fetch("http://localhost:5000/api/orders", {
+      const res = await fetch("https://ecommerce-project-jl8v.onrender.com/api/orders", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -16,7 +16,7 @@ export default function Login({ setPage, setUser }) {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ecommerce-project-jl8v.onrender.com/api/auth/login",
         {
           email: email.toLowerCase(), // ✅ normalize email
           password,

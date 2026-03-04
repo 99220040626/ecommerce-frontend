@@ -15,7 +15,7 @@ export default function Register({ setPage }) {
 
     try {
       setLoading(true);
-      await axios.post("http://localhost:5000/api/auth/register", {
+      await axios.post("https://ecommerce-project-jl8v.onrender.com/api/auth/register", {
         name,
         email,
         password,

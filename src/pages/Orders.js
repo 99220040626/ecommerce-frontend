@@ -18,7 +18,7 @@ export default function Orders({ user }) {
     const fetchOrders = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/orders/${user.id}`,
+          `https://ecommerce-project-jl8v.onrender.com/api/orders/${user.id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
