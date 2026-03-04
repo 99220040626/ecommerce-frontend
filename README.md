@@ -169,7 +169,7 @@ Manyam Siva Santhosh Kumar Reddy
 
 GitHub: [https://github.com/99220040626](https://github.com/99220040626)
 
-LinkedIn: [https://linkedin.com/in/manyam-siva-santhosh-kumar-reddy](linkedin.com/in/manyam-siva-santhosh-kumar-reddy-297a9531b)
+LinkedIn: [[https:linkedin.com/in/manyam-siva-santhosh-kumar-reddy-297a9531b)](https://www.linkedin.com/in/manyam-siva-santhosh-kumar-reddy-297a9531b/)
 
 Email: [sivasanthoshmanyam48@gmail.com](mailto:sivasanthoshmanyam48@gmail.com)
 
