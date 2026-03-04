@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# 🛍️ ProCart Frontend | Modern E-Commerce Client Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-grade React application powering the user experience of the ProCart E-Commerce platform. Designed with a scalable component architecture, secure API integration, and responsive UI principles to deliver a seamless shopping experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🔗 Live Application
 
-### `npm start`
+**Frontend (Production):**
+[https://ecommerce-frontend-rose-three.vercel.app/](https://ecommerce-frontend-rose-three.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Backend API:**
+[https://ecommerce-project-jl8v.onrender.com/](https://ecommerce-project-jl8v.onrender.com/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠 Tech Stack & Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Core Technologies**
 
-### `npm run build`
+* React.js (Component-Based Architecture)
+* JavaScript (ES6+)
+* Axios (REST API Communication)
+* React Router (Client-Side Routing)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Styling & UI**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Responsive CSS Design
+* Modular Component Styling
+* Mobile-First Layout Principles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Deployment & DevOps**
 
-### `npm run eject`
+* Hosted on Vercel
+* CI/CD integration via GitHub
+* Automatic production builds on every push to main branch
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Architecture Principles**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Reusable UI components
+* Centralized API configuration using environment variables
+* Clean separation of concerns (UI, routing, services)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Project Structure
 
-## Learn More
+```
+frontend/
+├── public/                # Static assets
+├── src/
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Route-based pages (Login, Products, Checkout)
+│   ├── services/          # API service layer (Axios configuration)
+│   ├── App.js             # Application routing configuration
+│   └── index.js           # Entry point
+├── package.json
+└── .env                   # Environment configuration (not committed)
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Core Features
 
-### Code Splitting
+### 👤 Authentication Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* User Registration
+* Secure Login Handling
+* Conditional Rendering Based on Authentication State
+* Protected Routes for Authorized Access
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🛒 Product Experience
 
-### Making a Progressive Web App
+* Dynamic product catalog retrieval from backend API
+* Real-time product rendering
+* Scalable component-driven product cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### 🧾 Cart & Order Processing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Add-to-cart functionality
+* Order submission via REST API
+* User-specific order history retrieval
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔗 API Integration
 
-### `npm run build` fails to minify
+The frontend communicates with the backend using RESTful endpoints.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Example API Endpoints:
+
+* POST /api/register
+* POST /api/login
+* GET /api/products
+* POST /api/orders
+* GET /api/orders/:userId
+
+All API base URLs are controlled via environment variables:
+
+```
+REACT_APP_API_URL=
+```
+
+This enables seamless switching between local development and production environments.
+
+---
+
+## ⚙️ Local Development Setup
+
+### 1️⃣ Clone Repository
+
+```
+git clone <your-frontend-repo-url>
+cd ecommerce-frontend
+```
+
+### 2️⃣ Install Dependencies
+
+```
+npm install
+```
+
+### 3️⃣ Configure Environment Variables
+
+Create a `.env` file:
+
+```
+REACT_APP_API_URL=http://localhost:5000
+```
+
+### 4️⃣ Start Development Server
+
+```
+npm start
+```
+
+Application runs on:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🌍 Production Deployment Highlights
+
+* Cloud-hosted on Vercel
+* Environment-based configuration management
+* Automated CI/CD deployment pipeline
+* Optimized production build configuration
+
+---
+
+## 💼 Professional Summary (For Resume)
+
+**Full-Stack E-Commerce Frontend Developer**
+
+Developed a scalable and responsive E-Commerce frontend using React.js with a modular component architecture. Integrated RESTful APIs for authentication, product management, and order processing. Implemented protected routing, environment-based configuration, and CI/CD deployment via Vercel. Delivered a production-ready user experience optimized for both desktop and mobile environments.
+
+---
+
+## 👨‍💻 Author
+
+Manyam Siva Santhosh Kumar Reddy
+GitHub: [https://github.com/99220040626](https://github.com/99220040626)
+LinkedIn: [https://linkedin.com/in/manyam-siva-santhosh-kumar-reddy](linkedin.com/in/manyam-siva-santhosh-kumar-reddy-297a9531b)
+Email: [sivasanthoshmanyam48@gmail.com](mailto:sivasanthoshmanyam48@gmail.com)
+
+---
+
+## 📜 License
+
+This project is developed for educational, portfolio, and demonstration purposes.
